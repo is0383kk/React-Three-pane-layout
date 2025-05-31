@@ -1,4 +1,4 @@
-// 設定ダイアログのヘッダー・左メニュー・右パネル構成サンプル
+// Settings dialog with header, left menu, and right panel layout
 
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { useState } from "react";
@@ -13,21 +13,22 @@ export default function SettingsDialog({
   const [selectedTab, setSelectedTab] = useState("general");
 
   const tabs = [
-    { key: "general", label: "一般" },
-    { key: "notifications", label: "通知" },
-    { key: "personalize", label: "パーソナライズ" },
-    { key: "security", label: "セキュリティ" },
-    { key: "subscription", label: "サブスクリプション" },
+    { key: "general", label: "General" },
+    { key: "notifications", label: "Notifications" },
+    { key: "personalize", label: "Personalization" },
+    { key: "security", label: "Security" },
+    { key: "subscription", label: "Subscription" },
   ];
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl p-0 overflow-hidden">
         <div className="flex h-[600px]">
-          {/* 左メニュー */}
+          {/* Left Menu */}
           <div className="w-48 border-r bg-muted/40 p-4">
-            <DialogTitle className="text-md font-bold mb-4">設定</DialogTitle>{" "}
-            {/* 必須 */}
+            <DialogTitle className="text-md font-bold mb-4">
+              Settings
+            </DialogTitle>
             <div className="flex flex-col space-y-2">
               {tabs.map((tab) => (
                 <button
@@ -45,24 +46,24 @@ export default function SettingsDialog({
             </div>
           </div>
 
-          {/* 右パネル */}
+          {/* Right Panel */}
           <div className="flex-1 p-6 overflow-y-auto">
             {selectedTab === "general" && (
               <div>
-                <h3 className="text-lg font-semibold mb-4">一般設定</h3>
+                <h3 className="text-lg font-semibold mb-4">General Settings</h3>
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span>テーマ</span>
+                    <span>Theme</span>
                     <select className="border rounded px-2 py-1">
-                      <option>ライト</option>
-                      <option>ダーク</option>
+                      <option>Light</option>
+                      <option>Dark</option>
                     </select>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>言語</span>
+                    <span>Language</span>
                     <select className="border rounded px-2 py-1">
-                      <option>日本語</option>
                       <option>English</option>
+                      <option>Japanese</option>
                     </select>
                   </div>
                 </div>
@@ -71,31 +72,29 @@ export default function SettingsDialog({
 
             {selectedTab === "notifications" && (
               <div>
-                <h3 className="text-lg font-semibold mb-4">通知</h3>
-                <p>通知設定をここに記述</p>
+                <h3 className="text-lg font-semibold mb-4">Notifications</h3>
+                <p>Notification settings go here</p>
               </div>
             )}
 
             {selectedTab === "personalize" && (
               <div>
-                <h3 className="text-lg font-semibold mb-4">パーソナライズ</h3>
-                <p>パーソナライズ設定をここに記述</p>
+                <h3 className="text-lg font-semibold mb-4">Personalization</h3>
+                <p>Personalization settings go here</p>
               </div>
             )}
 
             {selectedTab === "security" && (
               <div>
-                <h3 className="text-lg font-semibold mb-4">セキュリティ</h3>
-                <p>セキュリティ設定をここに記述</p>
+                <h3 className="text-lg font-semibold mb-4">Security</h3>
+                <p>Security settings go here</p>
               </div>
             )}
 
             {selectedTab === "subscription" && (
               <div>
-                <h3 className="text-lg font-semibold mb-4">
-                  サブスクリプション
-                </h3>
-                <p>プランや支払い情報など</p>
+                <h3 className="text-lg font-semibold mb-4">Subscription</h3>
+                <p>Plan and billing information goes here</p>
               </div>
             )}
           </div>

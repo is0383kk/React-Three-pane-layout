@@ -1,0 +1,17 @@
+{
+  // 推奨拡張機能
+  "recommendations": [
+    "dbaeumer.vscode-eslint", // ESLint
+    "esbenp.prettier-vscode", // Prettier
+    "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
+    "yoavbls.pretty-ts-errors", // TypeScriptエラーを読みやすく
+    "formulahendry.auto-close-tag", // タグの自動閉じ
+    "formulahendry.auto-rename-tag", // タグの同時リネーム
+    "GitHub.copilot", // Copilot
+    "GitHub.copilot-chat", // Copilot Chat（任意）
+    "Wix.vscode-import-cost", // インポートされたモジュールのサイズ表示（任意）
+    "naumovs.color-highlight", // CSSカラーコードに色を付ける（Tailwind補助）
+    "prisma.prisma", // Prismaを使っている場合（shadcn対応プロジェクトではよく使う）
+    "Tobermory.es6-string-html" // `html` タグ付きテンプレート文字列の構文強調
+  ]
+}

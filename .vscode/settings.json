@@ -1,0 +1,28 @@
+{
+  /*
+      React関連設定
+    */
+  // JSXの中でも自動インポートをより賢く
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // JSX属性などの入力補助
+  "editor.parameterHints.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeLens": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+
+  // Tailwind CSS IntelliSense
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "twMerge\\(([^)]*)\\)", // twMerge対応
+    "clsx\\(([^)]*)\\)", // clsx対応
+    "cn\\(([^)]*)\\)" // shadcnの cn 関数対応
+  ]
+}
