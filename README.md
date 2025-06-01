@@ -1,45 +1,54 @@
-# 導入
+# React-Three pane layout
 
-```console
-$ npx create-next-app@latest
-√ What is your project named? ... react-tutorial
-√ Would you like to use TypeScript? ... No / Yes
-√ Would you like to use ESLint? ... No / Yes
-√ Would you like to use Tailwind CSS? ... No / Yes
-√ Would you like your code inside a `src/` directory? ... No / Yes
-√ Would you like to use App Router? (recommended) ... No / Yes
-√ Would you like to use Turbopack for `next dev`? ... No / Yes
-√ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
-√ What import alias would you like configured? ... @/*
+A responsive and resizable three-pane layout component built with **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**.
+Ideal for dashboard-style applications where left navigation, center content, and a resizable right panel are needed.
+
+---
+
+## ✨ Features
+
+- 📐 **Three-pane layout** (left menu, center content, right detail panel)
+- 🖱️ **Resizable right pane** with draggable handle
+- 🎨 Styled with **Tailwind CSS** and **shadcn/ui**
+- ⚛️ Built using **React Server Components** (Next.js App Router)
+- 🌙 Dark mode friendly (Scheduled to be created)
+
+---
+
+![](https://github.com/is0383kk/React-Three-pane-layout/blob/main/public/sample.jpeg)
+
+## 📁 Directory structure
+
 ```
-
-## ディレクトリ構造
-
-```
-親フォルダ名/
-├─ node_modules/      ← 依存ライブラリ（触らない）
-├─ public/            ← 画像やファビコンなど静的ファイル
+Parent/
+├─ node_modules/ ← Dependent libraries (not touched)
+├─ public/ ← Static files such as images and favicons
 ├─ src/
-│  └─ app/            ← ページやコンポーネントを追加する場所
-│     └─ page.tsx     ← トップページ（`/`）の中身
-├─ package.json       ← 使用ライブラリ・スクリプト
-├─ tailwind.config.js ← Tailwind CSS 設定（入れていれば）
-├─ postcss.config.js  ← Tailwind 用のPostCSS設定
-├─ jsconfig.json      ← インポートエイリアス（@/）の設定
-└─ next.config.js     ← Next.jsの設定（必要なら）
+│ └─ app/ ← Place to add pages and components
+│ └─ page.tsx ← Top page (`/`) contents
+| └─ components/ ← shadcn & sidebar & settings-dialog components
+├─ package. json ← Libraries and scripts used
+├─ tailwind.config.js ← Tailwind CSS settings (if included)
+├─ postcss.config.js ← PostCSS settings for Tailwind
+├─ jsconfig.json ← Import alias (@/) Settings
+└─ next.config.js ← Next.js settings (if necessary)
 ```
 
-## shadcn の導入
+## 🚀 Getting Started
 
-```console
-npx shadcn@latest init
+### 1. Install dependencies
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
 ```
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+### 2. Start the development server
 
 ```bash
 npm run dev
@@ -55,19 +64,26 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 🧩 Component Overview
 
-## Learn More
+### ThreePaneLayout
 
-To learn more about Next.js, take a look at the following resources:
+This component defines a layout with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- left: Sidebar or navigation area (ReactNode)
+- centerTitle: Title string for center panel
+- centerContent: Main content (ReactNode)
+- rightTitle: Title (ReactNode) for right pane
+- rightContent: Supplementary detail content (ReactNode)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 🧱 Technologies Used
 
-## Deploy on Vercel
+- [Next.js （App Router）](https://nextjs.org/docs/app)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.dev/)
+- [Lucide Icons](https://ui.shadcn.dev/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-sourced under the MIT License.
