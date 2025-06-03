@@ -50,7 +50,7 @@ export default function ThreePaneLayout({
 
   return (
     <div className="flex flex-col h-screen">
-      <main className="flex flex-1 overflow-hidden relative z-0">
+      <main className="flex flex-1 overflow-y-auto relative z-0">
         {/* Sidebar */}
         <aside>{left}</aside>
 
