@@ -125,7 +125,11 @@ export function InnerSidebar() {
     <>
       <Sidebar collapsible="icon">
         {/* Sidebar Header */}
-        <SidebarHeader className="border-b-2 border-gray-200 dark:border-gray-700">
+        <SidebarHeader
+          className={`border-gray-200 dark:border-gray-700 ${
+            open ? "h-16 border-b-2" : "h-28 border-b-2"
+          }`}
+        >
           <SidebarMenu>
             <SidebarMenuItem>
               <DropdownMenu>
