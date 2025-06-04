@@ -11,11 +11,13 @@ import ThreePaneLayout from "@/layouts/three-pane-layout";
 import {
   BadgeHelp,
   CircleUserRound,
+  FilePlus,
   Home,
   LogOut,
   Settings,
   User,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -55,17 +57,71 @@ export default function Page() {
         </div>
       }
       left={<AppSidebar />}
-      centerTitle={"Center Pane"}
+      centerTitle={"Samples"}
       centerContent={
-        <>
-          <p>Center pane content </p>
-        </>
+        <div className="space-y-4">
+          <p className="text-muted-foreground">
+            Select a sample layout to view:
+          </p>
+
+          <div className="space-y-2">
+            <Link
+              href="/two-pane-sample1"
+              className="block px-4 py-2 bg-muted hover:bg-muted/70 rounded-md text-sm font-medium transition"
+            >
+              ▶️ Two Pane Sample 1
+            </Link>
+            <Link
+              href="/two-pane-sample2"
+              className="block px-4 py-2 bg-muted hover:bg-muted/70 rounded-md text-sm font-medium transition"
+            >
+              ▶️ Two Pane Sample 2
+            </Link>
+            <Link
+              href="/three-pane-sample1"
+              className="block px-4 py-2 bg-muted hover:bg-muted/70 rounded-md text-sm font-medium transition"
+            >
+              ▶️ Three Pane Sample 1
+            </Link>
+            <Link
+              href="/three-pane-sample2"
+              className="block px-4 py-2 bg-muted hover:bg-muted/70 rounded-md text-sm font-medium transition"
+            >
+              ▶️ Three Pane Sample 2
+            </Link>
+          </div>
+        </div>
       }
-      rightTitle={"Right Pane"}
+      rightTitle={"Latest update"}
       rightContent={
-        <>
-          <p>Right pane content</p>
-        </>
+        <div className="space-y-4 text-sm">
+          <p className="text-muted-foreground">Recently modified items:</p>
+          <ul className="space-y-2">
+            <li className="border-l-2 border-primary pl-3">
+              <p className="font-medium">
+                <div className="inline-flex items-center space-x-2">
+                  <FilePlus />
+                  Two-Pane-Layout Sample
+                </div>
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Updated by よしを on 2025-06-04
+              </p>
+            </li>
+
+            <li className="border-l-2 border-primary pl-3">
+              <p className="font-medium">
+                <div className="inline-flex items-center space-x-2">
+                  <FilePlus />
+                  Tree-Pane-Layout Sample
+                </div>
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Updated by よしを on 2025-06-04
+              </p>
+            </li>
+          </ul>
+        </div>
       }
     />
   );
