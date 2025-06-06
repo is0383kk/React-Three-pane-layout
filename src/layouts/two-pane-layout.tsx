@@ -24,7 +24,7 @@ export default function TwoPaneLayout({
         <div className="flex flex-col flex-1 h-full min-h-0">
           {/* Header */}
           {topNavigation && (
-            <header className="h-16 px-6 flex items-center border-b-2 bg-white dark:bg-gray-900 z-10">
+            <header className="h-16 px-6 flex items-center border-b-2 border-border bg-white dark:bg-gray-900 dark:border-gray-700 z-10">
               {topNavigation}
             </header>
           )}
