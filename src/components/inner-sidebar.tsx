@@ -30,16 +30,12 @@ import {
 } from "@/components/ui/sidebar";
 import {
   Blocks,
-  Calendar,
   ChevronDown,
   ChevronUp,
   CircleUserRound,
-  Home,
-  Inbox,
   LogOut,
   Menu,
   PanelLeftClose,
-  Search,
   Settings,
   Smile,
 } from "lucide-react";
@@ -54,44 +50,19 @@ const workspaceItem = [
     url: "#",
     icon: Blocks,
   },
-  {
-    title: "Work Space 2",
-    url: "#",
-    icon: Blocks,
-  },
-  {
-    title: "Work Space 3",
-    url: "#",
-    icon: Blocks,
-  },
 ];
 
 // Sidebar Content Item
 const menuItem = [
   {
-    title: "Home",
-    url: "#",
-    icon: Home,
+    title: "マークダウンエディタ",
+    url: "/markdown-editor",
+    icon: Blocks,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
+    title: "JSONフォーマッター",
+    url: "/json-formatter",
+    icon: Blocks,
   },
 ];
 
@@ -123,7 +94,7 @@ export function InnerSidebar() {
 
   return (
     <>
-      <Sidebar collapsible="icon">
+      <Sidebar collapsible="icon" className="dark:border-gray-700">
         {/* Sidebar Header */}
         <SidebarHeader
           className={`border-gray-200 dark:border-gray-700 ${

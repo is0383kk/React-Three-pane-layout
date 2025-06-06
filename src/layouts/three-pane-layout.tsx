@@ -81,14 +81,14 @@ export default function ThreePaneLayout({
               className="absolute top-0 cursor-col-resize z-[9999] group"
               style={{
                 left: `calc(100% - ${rightPaneWidth}px - 4px)`,
-                width: "4px",
+                width: "3px",
                 height: "100%",
                 backgroundColor: "transparent",
                 pointerEvents: "auto",
-                boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.1)",
                 transition: "background-color 0.2s ease",
               }}
             >
+              <div className="w-full h-full transition-colors bg-gray-200 dark:bg-gray-700" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg text-gray-400 dark:text-gray-500 select-none pointer-events-none group-hover:text-gray-600 dark:group-hover:text-gray-300">
                 ⇔
               </div>
