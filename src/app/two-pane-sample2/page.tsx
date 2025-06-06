@@ -5,6 +5,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+import { ThemeToggle } from "@/components/theme-toggle";
 import { DatetimePicker } from "@/components/ui/date-time-picker";
 import {
   DropdownMenu,
@@ -31,19 +32,29 @@ import {
   Settings,
   User,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Page() {
   const [startDate, setStartDate] = useState<Date>();
   const [endDate, setEndDate] = useState<Date>();
+  const router = useRouter();
   return (
     <TwoPaneLayout
       topNavigation={
         <div className="flex items-center justify-between w-full">
           {/* Header：Logo&Title */}
-          <div className="flex items-center space-x-2">
-            <Home className="w-5 h-5" />
-            <span className="text-lg font-semibold">Product Name</span>
+          <div className="flex items-center space-x-2 cursor-pointer">
+            <div
+              className="flex items-center space-x-2 cursor-pointer"
+              onClick={() => router.push("/")}
+            >
+              <Home className="w-5 h-5 text-gray-700 dark:text-gray-200" />
+              <span className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                Web-dev-tools
+              </span>
+            </div>
+            <ThemeToggle />
           </div>
 
           {/* Header：Profile icon */}

@@ -58,7 +58,7 @@ export default function ThreePaneLayout({
         <div className="flex flex-col flex-1 h-full min-h-0">
           {/* Header */}
           {topNavigation && (
-            <header className="h-16 px-6 flex items-center border-b-2 bg-white dark:bg-gray-900 z-10">
+            <header className="h-16 px-6 flex items-center border-b-2 border-border bg-white dark:bg-gray-900 dark:border-gray-700 z-10">
               {topNavigation}
             </header>
           )}
@@ -66,16 +66,16 @@ export default function ThreePaneLayout({
           {/* Panes */}
           <div className="flex flex-1 relative min-h-0">
             {/* Center Pane */}
-            <section className="flex flex-col flex-1 h-full min-h-0 px-4 py-6">
+            <section className="flex flex-col flex-1 h-full min-h-0 px-4 py-6 bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
               <h1 className="text-2xl font-bold mb-4">{centerTitle}</h1>
-              <Card className="flex-1 border border-border rounded-md shadow-none">
+              <Card className="flex-1 border border-border rounded-md shadow-none dark:bg-gray-900 dark:border-gray-700">
                 <CardContent className="p-4 h-full">
                   {centerContent}
                 </CardContent>
               </Card>
             </section>
 
-            {/* Drag Handle */}
+            {/* ⇔ Drag Handle */}
             <div
               onMouseDown={handleMouseDown}
               className="absolute top-0 cursor-col-resize z-[9999] group"
@@ -97,10 +97,10 @@ export default function ThreePaneLayout({
             {/* Right Pane */}
             <section
               style={{ width: `${rightPaneWidth}px` }}
-              className="flex flex-col flex-shrink-0 h-full min-h-0 px-4 py-6"
+              className="flex flex-col flex-shrink-0 h-full min-h-0 px-4 py-6 bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100"
             >
               <h1 className="text-2xl font-bold mb-4">{rightTitle}</h1>
-              <Card className="flex-1 border border-border rounded-md shadow-none">
+              <Card className="flex-1 border border-border rounded-md shadow-none dark:bg-gray-900 dark:border-gray-700">
                 <CardContent className="p-4 h-full">{rightContent}</CardContent>
               </Card>
             </section>

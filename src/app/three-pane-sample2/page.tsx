@@ -1,6 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   DropdownMenu,
@@ -19,16 +20,26 @@ import {
   Settings,
   User,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
   return (
     <ThreePaneLayout
       topNavigation={
         <div className="flex items-center justify-between w-full">
           {/* Header：Logo&Title */}
-          <div className="flex items-center space-x-2">
-            <Home className="w-5 h-5" />
-            <span className="text-lg font-semibold">Product Name</span>
+          <div className="flex items-center space-x-2 cursor-pointer">
+            <div
+              className="flex items-center space-x-2 cursor-pointer"
+              onClick={() => router.push("/")}
+            >
+              <Home className="w-5 h-5 text-gray-700 dark:text-gray-200" />
+              <span className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                Web-dev-tools
+              </span>
+            </div>
+            <ThemeToggle />
           </div>
 
           {/* Header：Profile icon */}
