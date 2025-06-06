@@ -1,38 +1,42 @@
-# React-Three pane layout
+# React-shadcn-pane-layouts
 
-A responsive and resizable three-pane layout component built with **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**.
-Ideal for dashboard-style applications where left navigation, center content, and a resizable right panel are needed.
+A collection of responsive and resizable pane layout components built with **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**.
+
+Ideal for dashboard-style applications with flexible layouts such as two-pane and three-pane structures featuring sidebar navigation, main content, and resizable detail panels.
 
 ---
 
 ## ✨ Features
 
-- 📐 **Three-pane layout** (left menu, center content, right detail panel)
-- 🖱️ **Resizable right pane** with draggable handle
+- 📐 **Two-pane / Three-pane layouts** for modern web apps
+- 🖱️ **Resizable panes** with draggable handles
 - 🎨 Styled with **Tailwind CSS** and **shadcn/ui**
 - ⚛️ Built using **React Server Components** (Next.js App Router)
-- 🌙 Dark mode friendly (Scheduled to be created)
+- 🌙 Dark mode friendly (coming soon)
 
 ---
 
-![](https://github.com/is0383kk/React-Three-pane-layout/blob/main/public/sample.jpeg)
+![](https://github.com/is0383kk/React-shadcn-pane-layouts/blob/main/public/sample.jpeg)
 
-## 📁 Directory structure
+## 📁 Directory Structure
 
 ```
 Parent/
 ├─ node_modules/ ← Dependent libraries (not touched)
 ├─ public/ ← Static files such as images and favicons
 ├─ src/
-│ └─ app/ ← Place to add pages and components
-│ └─ page.tsx ← Top page (`/`) contents
-| └─ components/ ← shadcn & sidebar & settings-dialog components
-├─ package. json ← Libraries and scripts used
-├─ tailwind.config.js ← Tailwind CSS settings (if included)
-├─ postcss.config.js ← PostCSS settings for Tailwind
-├─ jsconfig.json ← Import alias (@/) Settings
-└─ next.config.js ← Next.js settings (if necessary)
+│ └─ app/ ← Pages and layout usage examples
+│ └─ page.tsx ← Top page (/) contents
+│ └─ components/ ← Reusable UI components (shadcn, sidebar, dialogs)
+│ └─ layouts/ ← TwoPaneLayout, ThreePaneLayout components
+├─ package.json ← Libraries and scripts used
+├─ tailwind.config.js ← Tailwind CSS settings
+├─ postcss.config.js ← PostCSS settings
+├─ jsconfig.json ← Import alias (@/) settings
+└─ next.config.js ← Next.js settings
 ```
+
+---
 
 ## 🚀 Getting Started
 
@@ -60,21 +64,24 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 with your browser to see the result.
+You can start editing the layout examples by modifying files under src/app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🧩 Components Overview
 
-# 🧩 Component Overview
+TwoPaneLayout
 
-### ThreePaneLayout
+- left: Sidebar or menu (ReactNode)
+- centerTitle: Title for the main panel
+- centerContent: Main content area
 
-This component defines a layout with:
+ThreePaneLayout
 
-- left: Sidebar or navigation area (ReactNode)
+- left: Sidebar or navigation
 - centerTitle: Title string for center panel
 - centerContent: Main content (ReactNode)
-- rightTitle: Title (ReactNode) for right pane
-- rightContent: Supplementary detail content (ReactNode)
+- rightTitle: Title for right pane
+- rightContent: Detail or supplementary content
 
 # 🧱 Technologies Used
 
