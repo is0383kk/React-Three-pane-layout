@@ -36,7 +36,7 @@ export default function Page() {
             >
               <Home className="w-5 h-5 text-gray-700 dark:text-gray-200" />
               <span className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-                Web-dev-tools
+                React-shadcn-pane-layouts
               </span>
             </div>
             <ThemeToggle />
