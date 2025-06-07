@@ -30,12 +30,16 @@ import {
 } from "@/components/ui/sidebar";
 import {
   Blocks,
+  Calendar,
   ChevronDown,
   ChevronUp,
   CircleUserRound,
+  Home,
+  Inbox,
   LogOut,
   Menu,
   PanelLeftClose,
+  Search,
   Settings,
   Smile,
 } from "lucide-react";
@@ -50,19 +54,44 @@ const workspaceItem = [
     url: "#",
     icon: Blocks,
   },
+  {
+    title: "Work Space 2",
+    url: "#",
+    icon: Blocks,
+  },
+  {
+    title: "Work Space 3",
+    url: "#",
+    icon: Blocks,
+  },
 ];
 
 // Sidebar Content Item
 const menuItem = [
   {
-    title: "マークダウンエディタ",
-    url: "/markdown-editor",
-    icon: Blocks,
+    title: "Home",
+    url: "#",
+    icon: Home,
   },
   {
-    title: "JSONフォーマッター",
-    url: "/json-formatter",
-    icon: Blocks,
+    title: "Inbox",
+    url: "#",
+    icon: Inbox,
+  },
+  {
+    title: "Calendar",
+    url: "#",
+    icon: Calendar,
+  },
+  {
+    title: "Search",
+    url: "#",
+    icon: Search,
+  },
+  {
+    title: "Settings",
+    url: "#",
+    icon: Settings,
   },
 ];
 
