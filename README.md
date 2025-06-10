@@ -18,6 +18,8 @@ Ideal for dashboard-style applications with flexible layouts such as two-pane an
 
 ![](https://github.com/is0383kk/React-shadcn-pane-layouts/blob/main/public/sample.jpeg)
 
+![](https://github.com/is0383kk/React-shadcn-pane-layouts/blob/main/public/sample2.png)
+
 ## 📁 Directory Structure
 
 ```
@@ -89,7 +91,7 @@ ThreePaneLayout
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.dev/)
-- [Lucide Icons](https://ui.shadcn.dev/)
+- [Lucide Icons](https://lucide.dev/icons/)
 
 # 📄 License
 
