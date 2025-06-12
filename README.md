@@ -4,7 +4,14 @@ A collection of responsive and resizable pane layout components built with **Rea
 
 Ideal for dashboard-style applications with flexible layouts such as two-pane and three-pane structures featuring sidebar navigation, main content, and resizable detail panels.
 
+You can access WEB page using this layout:
+- [https://is0383kk.github.io/Web-dev-tools/](https://is0383kk.github.io/Web-dev-tools/)
+- [https://is0383kk.github.io/Web-dev-tools/](https://is0383kk.github.io/React-shadcn-pane-layouts/)
+
 ---
+
+![](https://github.com/is0383kk/React-shadcn-pane-layouts/blob/main/public/sample.jpeg)
+![](https://github.com/is0383kk/Web-dev-tools/sample.png)
 
 ## ✨ Features
 
@@ -14,11 +21,9 @@ Ideal for dashboard-style applications with flexible layouts such as two-pane an
 - ⚛️ Built using **React Server Components** (Next.js App Router)
 - 🌙 Dark mode friendly (coming soon)
 
----
 
-![](https://github.com/is0383kk/React-shadcn-pane-layouts/blob/main/public/sample.jpeg)
 
-![](https://github.com/is0383kk/React-shadcn-pane-layouts/blob/main/public/sample2.png)
+
 
 ## 📁 Directory Structure
 
