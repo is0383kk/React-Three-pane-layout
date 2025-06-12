@@ -6,7 +6,7 @@ Ideal for dashboard-style applications with flexible layouts such as two-pane an
 
 You can access WEB page using this layout:
 - [https://is0383kk.github.io/Web-dev-tools/](https://is0383kk.github.io/Web-dev-tools/)
-- [https://is0383kk.github.io/Web-dev-tools/](https://is0383kk.github.io/React-shadcn-pane-layouts/)
+- [https://is0383kk.github.io/React-shadcn-pane-layouts/](https://is0383kk.github.io/React-shadcn-pane-layouts/)
 
 ---
 
