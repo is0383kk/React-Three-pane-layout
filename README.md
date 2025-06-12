@@ -11,7 +11,7 @@ You can access WEB page using this layout:
 ---
 
 ![](https://github.com/is0383kk/React-shadcn-pane-layouts/blob/main/public/sample.jpeg)
-![](https://github.com/is0383kk/Web-dev-tools/sample.png)
+![](https://github.com/is0383kk/Web-dev-tools/blob/main/sample.png)
 
 ## ✨ Features
 
